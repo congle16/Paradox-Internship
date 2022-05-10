@@ -143,18 +143,26 @@ _Lúc này ta phải cân nhắc vì nếu xóa branch thì sẽ mất đi các 
     * HÀM PRINT
 
     * STRING
+![image](https://cdn.techbeamers.com/wp-content/uploads/2016/03/String-Representation-in-Python.png)
 
-    * NUMBER
+    * NUMBER: INT - FLOAT - COMPLEX(số phức)
 
-    * LIST
+    * BOOLEAN: TRUE - FALSE
 
-    * ARRAY
+    * LIST []: Python list is an array like construct which stores arbitrarily typed objects in an ordered sequence. It is very flexible and does not have a fixed size. Index in a list begins with zero in Python.
+        + It is a heterogeneous collection of items of varied data types. For example, a list object can store the files in a folder, or the employee data in a company etc.
 
-    * SET
+    * SET {}: Amongst all the Python data types, the set is one which supports mathematical operations like union, intersection, symmetric difference etc. A set is an unordered collection of unique and immutable objects. Since the set derives its implementation from the “Set” in mathematics, so it can’t have multiple occurrences of the same element.
 
-    * TUPLE
+    * TUPLE (): A tuple is a heterogeneous collection of Python objects separated by commas. It means objects of different data types can co-exist in a tuple. The tuple and a list are somewhat similar as they share the following traits.
+        + Both objects are an ordered sequence.
+        + They enable indexing and repetition.
+        + Nesting is allowed.
+        + They can store values of different types.
 
-    * DICTIONARY
+    * DICTIONARY { : }: A dictionary in Python is an unordered collection of key-value pairs. It’s a built-in mapping type in Python where keys map to values. These key-value pairs provide an intuitive way to store data. Dictionaries act like a database. Here, we don’t use a number to get a particular index value as we do with a list. Instead, we replace it with a key and then use the key to fetch its value.
+
+    **** COMPREHENSIONS: || expr1 FOR element IN in_list IF condition OR/AND expr2 ||
 
     * OPERATORS
 
