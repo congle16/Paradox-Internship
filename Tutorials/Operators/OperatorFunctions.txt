@@ -1,0 +1,84 @@
+1. add(a, b) :- This functions returns addition of the given arguments.
+Operation – a + b.
+
+2. sub(a, b) :- This functions returns difference of the given arguments.
+Operation – a – b.
+
+3. mul(a, b) :- This functions returns product of the given arguments.
+Operation – a * b.
+
+4. truediv(a,b) :- This function returns division of the given arguments.
+Operation – a / b.
+
+5. floordiv(a,b) :- This function also returns division of the given arguments. 
+But the value is floored value i.e. returns greatest small integer.
+Operation – a // b.
+
+6. pow(a,b) :- This function returns exponentiation of the given arguments.
+Operation – a ** b.
+
+7. mod(a,b) :- This function returns modulus of the given arguments.
+Operation – a % b.
+
+8. lt(a, b) :- This function is used to check if a is less than b or not. 
+Returns true if a is less than b, else returns false.
+Operation – a < b.
+
+9. le(a, b) :- This function is used to check if a is less than or equal to b or not. 
+Returns true if a is less than or equal to b, else returns false.
+Operation – a <= b.
+
+10. eq(a, b) :- This function is used to check if a is equal to b or not. 
+Returns true if a is equal to b, else returns false.
+Operation – a == b.
+
+11. gt(a,b) :- This function is used to check if a is greater than b or not. 
+Returns true if a is greater than b, else returns false.
+Operation – a > b.
+
+12. ge(a,b) :- This function is used to check if a is greater than or equal to b or not. 
+Returns true if a is greater than or equal to b, else returns false.
+Operation – a >= b.
+
+13. ne(a,b) :- This function is used to check if a is not equal to b or is equal. 
+Returns true if a is not equal to b, else returns false.
+Operation – a != b.
+
+----------------------------------------------------------------------------------------------
+
+1. setitem(ob, pos, val) :- This function is used to assign the value at a particular position in the container. 
+Operation – ob[pos] = val
+
+2. delitem(ob, pos) :- This function is used to delete the value at a particular position in the container. 
+Operation – del ob[pos]
+
+3. getitem(ob, pos) :- This function is used to access the value at a particular position in the container. 
+Operation – ob[pos]
+
+4. setitem(ob, slice(a,b), vals) :- This function is used to set the values in a particular range in the container. 
+Operation – obj[a:b] = vals
+
+5. delitem(ob, slice(a,b)) :- This function is used to delete the values from a particular range in the container. 
+Operation – del obj[a:b]
+
+6. getitem(ob, slice(a,b)) :- This function is used to access the values in a particular range in the container. 
+Operation – obj[a:b]
+
+7. concat(ob1,obj2) :- This function is used to concatenate two containers. 
+Operation – obj1 + obj2
+
+8. contains(ob1,obj2) :- This function is used to check if obj2 in present in obj1. 
+Operation – obj2 in obj1
+
+9. and_(a,b) :- This function is used to compute bitwise and of the mentioned arguments. 
+Operation – a & b
+
+10. or_(a,b) :- This function is used to compute bitwise or of the mentioned arguments. 
+Operation – a | b
+
+11. xor(a,b) :- This function is used to compute bitwise xor of the mentioned arguments. 
+Operation – a ^ b
+
+12. invert(a) :- This function is used to compute bitwise inversion of the mentioned argument. 
+Operation – ~ a
+

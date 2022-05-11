@@ -1,0 +1,32 @@
+Tuple là một tập hợp các đối tượng Python giống như một danh sách. 
+Trình tự các giá trị được lưu trữ trong một tuple có thể thuộc bất kỳ loại nào 
+và chúng được lập chỉ mục bởi các số nguyên. 
+Các giá trị của một tuple được phân tách bằng cú pháp bởi ‘dấu phẩy '. 
+Mặc dù không cần thiết, nhưng việc định nghĩa một bộ tuple là phổ biến hơn bằng cách đóng chuỗi các giá trị trong ngoặc đơn. 
+Điều này giúp tìm hiểu các bộ dữ liệu Python dễ dàng hơn.
+
+# Tạo Tuple: (..., ..., ..., ...)
+    # Tuple = ()
+Các tuple là bất biến, và thông thường, chúng chứa một chuỗi các phần tử không đồng nhất được truy cập thông qua việc giải nén hoặc lập chỉ mục 
+(hoặc thậm chí bởi thuộc tính trong trường hợp các tuple được đặt tên). 
+List có thể thay đổi, và các yếu tố của chúng thường đồng nhất và được truy cập bằng cách lặp lại trong danh sách.
+
+# Tuple có thể được nối với nhau bằng toán tử +
+
+    
+# Built-in Method
+Method      Description
+index( )	Find in the tuple and returns the index of the given value where it’s available
+count( )	Returns the frequency of occurrence of a specified value
+
+# Built-in Function
+Function	Description
+all()	    Returns true if all element are true or if tuple is empty
+any()	    return true if any element of the tuple is true. if tuple is empty, return false
+len()	    Returns length of the tuple or size of the tuple
+enumerate()	Returns enumerate object of tuple
+max()	    return maximum element of given tuple
+min()	    return minimum element of given tuple
+sum()	    Sums up the numbers in the tuple
+sorted()	input elements in the tuple and return a new sorted list
+tuple()	    Convert an iterable to a tuple.

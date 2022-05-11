@@ -1,0 +1,72 @@
+Danh sách giống như các mảng có kích thước động, được khai báo bằng các ngôn ngữ khác (vectơ trong C ++ và ArrayList trong Java). 
+Danh sách không cần phải luôn luôn đồng nhất làm cho nó trở thành công cụ mạnh mẽ nhất trong Python. 
+Một danh sách có thể chứa các kiểu dữ liệu như số nguyên, chuỗi, cũng như các đối tượng. 
+Danh sách có thể thay đổi, và do đó, chúng có thể bị thay đổi ngay cả sau khi được khởi tạo.
+Danh sách trong Python được order và có số lượng xác định. 
+Các phần tử trong danh sách được lập chỉ mục theo một chuỗi xác định với 0 là chỉ mục đầu tiên. 
+
+# Tạo List: [..., ..., ..., ..., ..., ..., ...]
+    # List1 = []
+
+# Thêm phần tử vào danh sách:
+    # Append: Thêm 1 phần tử vào cuối danh sách
+    # List1.append(1)
+
+    # Insert: Thêm phần tử vào vị trí nào đó danh sách
+    # List1.insert(1, 2)
+
+    # Extend: Thêm danh sách vào danh sách
+    # List1.extend([3, 4, 5])
+
+# Xóa phần tử khỏi danh sách:
+    # Remove: Xóa phần tử được chỉ định trong danh sách, báo lỗi nếu phần tử không tồn tại
+    # List1.remove(1)
+    
+    # Pop: Được sử dụng để xóa và trả về 1 phần tử trong danh sách, mặc định nó sẽ xóa phần tử cuối cùng.
+    # Nếu muốn xóa phần tử ở vị trí nào đó, truyền chỉ mục vào như 1 tham số 
+    # List1.pop(), List1.pop(3)
+
+# Cắt phần tử khỏi danh sách:
+    # Trong danh sách, có nhiều cách để in toàn bộ danh sách với tất cả các phần tử, 
+    # nhưng để in một loạt các phần tử cụ thể từ danh sách, ta sử dụng thao tác slice. 
+    # Hoạt động slice được thực hiện trên danh sách với việc sử dụng dấu hai chấm (:). 
+    # Để in các phần tử từ đầu đến một chỉ mục [: index], 
+    # để in các phần tử từ phần tử cuối [: -index], 
+    # để in các phần tử từ chỉ mục cụ thể cho đến khi phần tử cuối [index:], 
+    # để in các phần tử trong phạm vi, sử dụng [start index: end index] 
+    # và để in toàn bộ danh sách với [:]. 
+    # Hơn nữa, để in toàn bộ danh sách theo thứ tự ngược lại, sử dụng [::-1].
+
+# List Comprehension: || expr1 FOR element IN in_list IF condition OR/AND expr2 ||
+    # Comprehension được sử dụng để tạo ra một danh sách mới từ các loại dữ liệu khác như Tuple, String, Array, List,..
+    
+# List Method
+Method	    Description
+list.Append()	Add an element to the end of the list
+list.Extend()	Add all elements of a list to another list
+list.Insert()	Insert an item at the defined index
+list.Remove()	Removes an item from the list
+list.Pop()	    Removes and returns an element at the given index
+list.Clear()	    Removes all items from the list
+list.Index()	    Returns the index of the first matched item
+list.Count()	    Returns the count of the number of items passed as an argument
+list.Sort()	    Sort items in a list in ascending order
+list.Reverse()	Reverse the order of items in the list
+list.copy()	    Returns a copy of the list
+
+# Built-in Function
+Function	Description
+reduce(list)	apply a particular function passed in its argument to all of the list elements stores the intermediate result and only returns the final summation value
+sum(list)	    Sums up the numbers in the list
+ord(list)	    Returns an integer representing the Unicode code point of the given Unicode character
+cmp(list)	    This function returns 1 if the first list is “greater” than the second list
+max(list)	    return maximum element of a given list
+min(list)	    return minimum element of a given list
+all(list)	    Returns true if all element is true or if the list is empty
+any(list)	    return true if any element of the list is true. if the list is empty, return false
+len(list)	    Returns length of the list or size of the list
+enumerate(list)	Returns enumerate object of the list
+accumulate(list)apply a particular function passed in its argument to all of the list elements returns a list containing the intermediate results
+filter(list)	tests if each element of a list is true or not
+map(list)	    returns a list of the results after applying the given function to each item of a given iterable
+lambda(list)	This function can have any number of arguments but only one expression, which is evaluated and returned.

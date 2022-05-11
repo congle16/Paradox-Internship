@@ -1,0 +1,44 @@
+(Dictionary) Từ điển trong Python là một tập hợp các giá trị dữ liệu không được order, 
+được sử dụng để lưu trữ các giá trị dữ liệu như map, không giống như các loại dữ liệu khác chỉ chứa một giá trị duy nhất là một phần tử, 
+Dictionary giữ cặp key:value. Key-Value được cung cấp trong từ điển để làm cho nó được tối ưu hóa hơn.
+
+Key trong dictionary không được trùng lặp
+
+# Tạo Dictionary: {...:..., ...:..., ...:..., ...}
+    # Dictionary1 = {}
+    Dictionary có thể được khởi tạo bằng hàm built-in dict()
+
+# Thêm phần tử vào từ điển:
+    Việc bổ sung các phần tử có thể được thực hiện theo nhiều cách. 
+    Một value tại một thời điểm có thể được thêm vào từ điển bằng cách xác định giá trị cùng với khóa, 
+    ví dụ: Dict [Key] = ‘Value'. 
+    Cập nhật một giá trị hiện có trong từ điển có thể được thực hiện bằng cách sử dụng phương thức update()
+    Giá trị khóa lồng nhau cũng có thể được thêm vào một từ điển hiện có.
+
+    Nếu key-value đã tồn tại, giá trị sẽ được cập nhật.
+
+# Xóa phần tử khỏi danh sách:
+    + del Dict[key]
+    + pop() được dùng để xóa và trả về giá trị của key chỉ định
+    + popitem xóa và trả về phần từ tùy ý
+
+# Cắt phần tử khỏi danh sách:
+
+    
+# Dictionary Method
+Method	    Description
+copy()	    They copy() method returns a shallow copy of the dictionary.
+clear()	    The clear() method removes all items from the dictionary.
+pop()	    Removes and returns an element from a dictionary having the given key.
+popitem()	Removes the arbitrary key-value pair from the dictionary and returns it as tuple.
+get()	    It is a conventional method to access a value for a key.
+dictionary_name.values()	returns a list of all the values available in a given dictionary.
+str()	    Produces a printable string representation of a dictionary.
+update()	    Adds dictionary dict2’s key-values pairs to dict
+setdefault()	Set dict[key]=default if key is not already in dict
+keys()	    Returns list of dictionary dict’s keys
+items()	    Returns a list of dict’s (key, value) tuple pairs
+has_key()	Returns true if key in dictionary dict, false otherwise
+fromkeys()	Create a new dictionary with keys from seq and values set to value.
+type()	    Returns the type of the passed variable.
+cmp()	    Compares elements of both dict.
