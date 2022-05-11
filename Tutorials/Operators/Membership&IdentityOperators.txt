@@ -1,0 +1,12 @@
+* MEMBERSHIP OPERATORS: Được sử dụng để xác nhận tư cách thành viên của một giá trị (string, list, tuple)
+
++ in operator -> The ‘in’ operator is used to check if a value exists in a sequence or not. 
+            Evaluate to true if it finds a variable in the specified sequence and false otherwise.
+
++ ‘not in’ operator -> Evaluates to true if it does not finds a variable in the specified sequence and false otherwise.
+
+* INDENTITY OPERATORS: Được sử dụng để xác định xem một giá trị thuộc một lớp hay một loại nhất định
+
++ ‘is’ operator –> Evaluates to true if the variables on either side of the operator point to the same object and false otherwise.
+
++ ‘is not’ operator –> Evaluates to false if the variables on either side of the operator point to a different object and true otherwise.

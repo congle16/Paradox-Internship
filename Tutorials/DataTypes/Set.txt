@@ -1,0 +1,53 @@
+Trong Python, Set là một tập hợp các loại dữ liệu không có thứ tự có thể sử dụng được, 
+có thể thay đổi và không có các yếu tố trùng lặp. 
+Thứ tự của các phần tử trong một Set không được xác định mặc dù nó có thể bao gồm các yếu tố khác nhau. 
+Ưu điểm chính của việc sử dụng một Set, trái ngược với List, nó có một phương pháp tối ưu hóa cao để kiểm tra xem một phần tử cụ thể có chứa trong tập hợp hay không.
+
+# Tạo Set: {..., ..., ..., ..., ..., ..., ...}
+    Các set có thể được tạo bằng cách sử dụng hàm set() tích hợp với một đối tượng có thể lặp lại 
+    hoặc một chuỗi bằng cách đặt chuỗi bên trong { }, được phân tách bằng ‘ , '.
+    # Set = set(list or string or ...)
+
+    Một set chỉ chứa các phần tử duy nhất nhưng tại thời điểm khởi tạo, 
+    nhiều giá trị trùng lặp cũng có thể được truyền. 
+    Thứ tự của các phần tử trong một set không được xác định và không thể thay đổi. 
+    Loại phần tử trong một set không cần phải giống nhau, 
+    các giá trị loại dữ liệu hỗn hợp khác nhau cũng có thể được chuyển đến set.
+    Khi khởi tạo 1 set number thì các phần tử sẽ được tự động sắp xếp theo thứ tự tăng dần
+
+# Thêm phần tử vào Set:
+    # Add: Thêm 1 phần tử  vào Set:
+    List không thể thêm 1 set như là 1 phần tử vì list không phải là hashable (có giá trị không thay đổi)
+    # Set.add(1)
+
+    # Update: Thêm nhiều phần tử, chấp nhận list, string, tuple và set khác
+    # Set.update(1, 2)
+
+
+# Xóa phần tử khỏi Set:
+    Các phần tử có thể được loại bỏ khỏi set bằng cách sử dụng hàm remove() tích hợp nhưng một KeyError phát sinh nếu phần tử không tồn tại. 
+    Để loại bỏ các phần tử khỏi một set mà không có keyerror, hãy sử dụng discard(), 
+    nếu phần tử không tồn tại trong tập hợp, nó vẫn không thay đổi. 
+
+    pop() có thể được sử dụng để xóa và trả về một phần tử từ set, như nó chỉ xóa phần tử cuối cùng.
+    ngoài ra dùng clear để xóa toàn bộ phần tử
+ 
+# Built-in Method
+Method	            Description
+add()	            Adds an element to a set
+remove()	        Removes an element from a set. If the element is not present in the set, raise a KeyError
+clear()	            Removes all elements form a set
+copy()	            Returns a shallow copy of a set
+pop()	            Removes and returns an arbitrary set element. Raise KeyError if the set is empty
+update()	        Updates a set with the union of itself and others
+union()	            Returns the union of sets in a new set
+difference()	    Returns the difference of two or more sets as a new set
+difference_update()	Removes all elements of another set from this set
+discard()	        Removes an element from set if it is a member. (Do nothing if the element is not in set)
+intersection()	    Returns the intersection of two sets as a new set
+intersection_update()	Updates the set with the intersection of itself and another
+isdisjoint()	    Returns True if two sets have a null intersection
+issubset()	        Returns True if another set contains this set
+issuperset()	    Returns True if this set contains another set
+symmetric_difference()	Returns the symmetric difference of two sets as a new set
+symmetric_difference_update()	Updates a set with the symmetric difference of itself and another

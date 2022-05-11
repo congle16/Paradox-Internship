@@ -1,0 +1,2 @@
+* Any trả về True nếu bất kỳ phần tử nào là True. Trả về False nếu nó rỗng hoặc tất cả là False
+* All trả về True nếu tất cả phần tử trả về True
