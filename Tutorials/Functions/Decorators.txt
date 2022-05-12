@@ -1,0 +1,79 @@
+Decorators là một công cụ rất mạnh mẽ và hữu ích trong Python vì nó cho phép các lập trình viên sửa đổi hành vi của function hoặc lớp. 
+Decorators cho phép chúng ta bọc một function khác để mở rộng hành vi của function được bọc, mà không cần sửa đổi vĩnh viễn nó. 
+
+    * Note: Tính chất của first class functions:
+        - 1 function là 1 object
+        - có thể lưu hàm như 1 biến
+        - có thể truyền hàm như 1 tham số cho hàm khác
+        - có thể trả về 1 hàm từ hàm khác
+        - có thể lưu chúng trong cấu trúc dữ liệu như hash table, list, ...
+
+
+ Trong Decorators, các function được lấy làm đối số vào một function khác và sau đó được gọi bên trong hàm bao bọc.
+
+ SYNTAX:
+ @gfg_decorator
+def hello_decorator():
+    print("Gfg")
+
+'''Above code is equivalent to -
+
+def hello_decorator():
+    print("Gfg")
+    
+hello_decorator = gfg_decorator(hello_decorator)'''
+
+
+EXAMPLE:
+def hello_decorator(func):
+	def inner1(*args, **kwargs):
+		
+		print("before Execution")
+		
+		# getting the returned value
+		returned_value = func(*args, **kwargs)
+		print("after Execution")
+		
+		# returning the value to the original frame
+		return returned_value
+		
+	return inner1
+
+
+# adding decorator to the function
+@hello_decorator
+def sum_two_numbers(a, b):
+	print("Inside the function")
+	return a + b
+
+a, b = 1, 2
+
+# getting the value through return of the function
+print("Sum =", sum_two_numbers(a, b))
+
+[link]: https://www.geeksforgeeks.org/decorators-with-parameters-in-python/?ref=lbp
+
+# Python code to illustrate
+# Decorators with parameters in Python
+
+def decorator_func(x, y):
+
+	def Inner(func):
+
+		def wrapper(*args, **kwargs):
+			print("I like Geeksforgeeks")
+			print("Summation of values - {}".format(x+y) )
+
+			func(*args, **kwargs)
+			
+		return wrapper
+	return Inner
+
+
+# Not using decorator
+def my_fun(*args):
+	for ele in args:
+		print(ele)
+
+# another way of using decorators
+decorator_func(12, 15)(my_fun)('Geeks', 'for', 'Geeks')

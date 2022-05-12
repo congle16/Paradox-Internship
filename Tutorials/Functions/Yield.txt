@@ -1,0 +1,13 @@
+Câu lệnh Yield tạm dừng chức năng thực thi của hàm và gửi lại giá trị cho người gọi, 
+nhưng giữ lại đủ trạng thái để cho phép chức năng tiếp tục ở nơi bị bỏ lại. 
+Khi được nối lại, chức năng tiếp tục thực hiện ngay sau yield cuối cùng đã chạy. 
+Điều này cho phép code của nó tạo ra một loạt các giá trị theo thời gian, 
+thay vì tính toán chúng cùng một lúc và gửi chúng trở lại như một danh sách.
+
+Return gửi một giá trị được chỉ định trở lại cho người gọi nó trong khi yield có thể tạo ra một chuỗi các giá trị. 
+Chúng ta nên sử dụng yield khi chúng ta muốn lặp lại một chuỗi, nhưng không muốn lưu trữ toàn bộ chuỗi trong bộ nhớ.
+
+Yield được sử dụng trong generators Python. 
+Hàm generator được định nghĩa giống như một hàm bình thường, nhưng bất cứ khi nào cần generator ra một giá trị, 
+nó sẽ làm như vậy với từ khóa yield thay vì return. 
+Nếu phần thân của DEF chứa yeild, function sẽ tự động trở thành 1 hàm generator.

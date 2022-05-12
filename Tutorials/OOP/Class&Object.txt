@@ -1,0 +1,21 @@
+* The self
+    + Các phương thức trong lớp phải có thêm một tham số đầu tiên trong định nghĩa phương thức. 
+    Chúng ta không đưa ra một giá trị cho tham số này khi chúng ta gọi phương thức, Python cung cấp nó.
+    + Chúng ta luôn có ít nhất 1 đối số cho phương thức dù cho nó không có
+    + Tương tự như con trỏ trong c++ và tham chiếu trong Java
+
+* __init__ method
+    + Tương tự constructors trong c++ và Java
+    + Constructors được dùng để khởi tạo trạng thái của đối tượng.
+    + Được thực thi ngay khi đối tượng được tạo
+
+* __del__ method
+    + Được gọi khi 1 đối tượng được destroy
+    + Hoặc được gọi khi chương trình kết thúc hoặc tham chiếu của nó bị xóa
+
+
+class CSStudent:
+    stream = 'cse'                  # Class Variable
+    def __init__(self,name,roll):
+        self.name = name            # Instance Variable
+        self.roll = roll            # Instance Variable

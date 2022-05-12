@@ -1,0 +1,13 @@
+A Closure là một đối tượng hàm nhớ các giá trị trong phạm vi kèm theo ngay cả khi chúng không có trong bộ nhớ.
+
+    + Một bản ghi lưu trữ một hàm cùng với một môi trường: một ánh xạ liên kết từng biến miễn phí của hàm (các biến được sử dụng cục bộ nhưng được xác định trong phạm vi kèm theo) 
+    với giá trị hoặc tham chiếu mà tên bị ràng buộc khi closure được tạo.
+    + Một closure không giống như một hàm đơn giản, 
+    hàm này để truy cập các biến được ghi lại thông qua các bản sao của closure hoặc tham chiếu của chúng, 
+    ngay cả khi hàm được gọi bên ngoài phạm vi của chúng.
+
+1. Closure được sử dụng như callback function, chúng cung cấp một số loại ẩn dữ liệu. 
+    Điều này giúp chúng ta giảm việc sử dụng các biến toàn cầu.
+
+2. Khi chúng ta có một vài chức năng trong mã của chúng tôi, 
+    closures là một cách hiệu quả. Nhưng nếu chúng ta cần có nhiều chức năng, thì hãy đến lớp (OOP).
